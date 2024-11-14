@@ -102,10 +102,7 @@ $allImages = [];
                                     $imageHtm = '';
                                     foreach ($section as $ikey => $image) {
                                         $allImages[] = $image;
-                                        $statusHtm = '';
-                                        if(!isset($sections[0]) || empty(trim($sections[0]))) {
-                                            $statusHtm .= '<div>'.photoStatus($image, $warningSize).'</div>';
-                                        }
+                                        $statusHtm = '<div>'.photoStatus($image, $warningSize).'</div>';
                                         $imageHtm .= '<div class="article-photo" style="width:calc('.((100)/(count($section)>1?2:1) - 2).'% - 20px);">
                                             <img src="' . htmlspecialchars($image['url']) . '" alt="image" loading="lazy" class="img-responsive" />
                                             '.$statusHtm.'
