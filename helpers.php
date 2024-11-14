@@ -139,7 +139,7 @@ function parseDocument($filePath) {
                             $text = $textElement->getText();
 
                             $fontStyles = $textElement->getFontStyle();
-                            $htmlText = htmlspecialchars(trim($text));
+                            $htmlText = htmlspecialchars($text);
 
                             if ($fontStyles) {
                                 if ($fontStyles->isBold()) {

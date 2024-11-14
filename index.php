@@ -51,9 +51,9 @@ $allImages = [];
 <head>
     <meta charset="UTF-8">
     <title>Document Importer</title>
-    <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="assets/multi-upload.css">
-    <link rel="stylesheet" href="assets/dragdrop.css">
+    <link rel="stylesheet" href="assets/multi-upload.css?v=1">
+    <link rel="stylesheet" href="assets/dragdrop.css?v=1">
+    <link rel="stylesheet" href="assets/main.css?v=1">
     <script>
         var warningSize = <?php echo $warningSize; ?>;
     </script>
@@ -107,7 +107,7 @@ $allImages = [];
                                             $statusHtm .= '<div>'.photoStatus($image, $warningSize).'</div>';
                                         }
                                         $imageHtm .= '<div class="article-photo" style="width:calc('.((100)/(count($section)>1?2:1) - 2).'% - 20px);">
-                                            <img src="' . htmlspecialchars($image['url']) . '" alt="image" loading="lazy" class="img-responsive" />
+                                            <img src="' . htmlspecialchars($image['url']) . '?v='.$index.$ikey.time().'" alt="image" loading="lazy" class="img-responsive" />
                                             '.$statusHtm.'
                                         </div>';
                                     }
@@ -135,7 +135,7 @@ $allImages = [];
                             foreach ($allImages as $key => $image) {
                                 $imgstatusHtm = '<div>'.photoStatus($image, $warningSize).'</div>';
                                 echo '<div class="article-photo" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:calc(31% - 20px);">
-                                    <img src="' . htmlspecialchars($image['url']) . '" alt="image" loading="lazy" class="img-responsive" />
+                                    <img src="' . htmlspecialchars($image['url']) . '?v='.$key.time().'" alt="image" loading="lazy" class="img-responsive" />
                                     '.$imgstatusHtm.'
                                 </div>';
                             }
@@ -174,7 +174,7 @@ $allImages = [];
     </div>
 </body>
 
-<script src="assets/script.js"></script>
-<script src="assets/multi-upload-script.js"></script>
-<script src="assets/dragdrop.js"></script>
+<script src="assets/script.js?v=1"></script>
+<script src="assets/multi-upload-script.js?v=1"></script>
+<script src="assets/dragdrop.js?v=1"></script>
 </html>
