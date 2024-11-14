@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container>div {
+    text-align: center;
+}
+
+.filename {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+
+.section .flex {
+    display: flex;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.section .flex>div, .all-article-images>div{
+    text-align: end;
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-top: 16px;
+}
+
+.section .flex>p {
+    display: flex;
+    gap: 10px;
+    padding-left: 5px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.header>div {
+    display: flex;
+    gap: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"],
+#doc-save {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.comfirm-msg {
+    text-align: center;
+    position: absolute;
+    background: #ffffffb8;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comfirm-msg .msg-body {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Basic styling for the drop area */
+.drop-area {
+    border: 2px dashed #cccccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.file-preview {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.img_ok {
+    color: #35a039;
+    font-weight: 700;
+}
+
+.img_no {
+    color: #f44336;
+    font-weight: 700;
+}
+
+.section .flex>div>div, .all-article-images>div>div{
+    margin-top: 8px;
+}
+
+.all-article-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}

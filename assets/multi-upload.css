@@ -1,0 +1,33 @@
+/* Basic styling for the drop area */
+.file-drop-area {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.file-drop-zone {
+    border: 2px dashed #cccccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.file-list-preview {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.upload-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50 !important;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
