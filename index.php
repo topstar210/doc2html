@@ -107,7 +107,7 @@ $allImages = [];
                                             $statusHtm .= '<div>'.photoStatus($image, $warningSize).'</div>';
                                         }
                                         $imageHtm .= '<div class="article-photo" style="width:calc('.((100)/(count($section)>1?2:1) - 2).'% - 20px);">
-                                            <img src="' . htmlspecialchars($image['url']) . '?v='.$index.$ikey.time().'" alt="image" loading="lazy" class="img-responsive" />
+                                            <img src="' . htmlspecialchars($image['url']) . '" alt="image" loading="lazy" class="img-responsive" />
                                             '.$statusHtm.'
                                         </div>';
                                     }
@@ -135,7 +135,7 @@ $allImages = [];
                             foreach ($allImages as $key => $image) {
                                 $imgstatusHtm = '<div>'.photoStatus($image, $warningSize).'</div>';
                                 echo '<div class="article-photo" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:calc(31% - 20px);">
-                                    <img src="' . htmlspecialchars($image['url']) . '?v='.$key.time().'" alt="image" loading="lazy" class="img-responsive" />
+                                    <img src="' . htmlspecialchars($image['url']) . '" alt="image" loading="lazy" class="img-responsive" />
                                     '.$imgstatusHtm.'
                                 </div>';
                             }
